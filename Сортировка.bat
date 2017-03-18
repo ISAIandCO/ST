@@ -18,7 +18,7 @@ for %%f in (*.png,*.bmp,*.gif,*.tiff,*.jpg,*.jpeg,*.psd) do move /-y <no "%%f" "
 
 for %%f in (*.vsm,*.idd,*.bp1,*.xmcd,*.mcd,*.fb2,*.pdf,*.txt,*.doc,
 *.docx,*.xls,*.xlsx,*.ppt,*.pptx,*.rtf,*.djvu, *.nb, *.ewd, *.mcd,
-*.3dmark*,*.tiff,*.tif) do move /-y <no "%%f" "docs"
+*.3dmark*,*.tiff,*.tif,*.dwg,*.cdw) do move /-y <no "%%f" "docs"
 
 del *.torrent
 for %%f in (*.lnk) do move /-y <no "%%f" "ink's"
@@ -31,7 +31,7 @@ for %%f in (*.png,*.bmp,*.gif,*.tiff,*.jpg,*.jpeg,*.psd) do ren "%%f" "1%%f"
 
 for %%f in (*.vsm,*.idd,*.bp1,*.xmcd,*.mcd,*.fb2,*.pdf,*.txt,*.doc,
 *.docx,*.xls,*.xlsx,*.ppt,*.pptx,*.rtf,*.djvu, *.nb, *.ewd, *.mcd,
-*.3dmark*,*.tiff,*.tif) do ren "%%f" "1%%f"
+*.3dmark*,*.tiff,*.tif,*.dwg,*.cdw) do ren "%%f" "1%%f"
 
 for %%f in (*.lnk) do ren "%%f" "1%%f"
 
@@ -40,4 +40,4 @@ for %%f in (*.vsm,*.idd,*.bp1,*.lnk,*.pdf,*.txt,*.doc,*.docx,
 *.3dmark*,*.png,*.bmp,*.gif,*.tiff,*.jpg,*.jpeg,*.psd,*.exe,
 *.log,*.reg,*.msi,*.acs3,*.mp3,*.wav,*.flac,*.zip,*.gz,*.tgz,
 *.rar,*.iso,*.tar,*.tg,*.avi,*.mov,*.mp4,*.mkv,*.3gp,*.wmv,
-*.fly) do goto :0110
+*.fly,*.dwg,*.cdw) do goto :0110
